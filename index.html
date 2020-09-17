@@ -612,8 +612,7 @@
             <div class="modal-form-field">
               <label for="name" class="form-label">Имя</label>
               <input type="text" name="name" id="name" class="modal-form-input" />
-              
-              <svg class="form-field-icon" width="12" height="12">
+              <svg class="form-field-icon">
                 <use href="./symbol-defs.svg#icon-person-black-18dp-1"></use>
               </svg> 
             </div>
@@ -621,8 +620,7 @@
             <div class="modal-form-field">
               <label for="tel" class="form-label">Телефон</label>
               <input type="tel" name="tel" id="tel" class="modal-form-input" />
-              
-              <svg class="form-field-icon" width="13" height="13">
+              <svg class="form-field-icon">
                 <use href="./symbol-defs.svg#icon-phone-black-18dp-1"></use>
               </svg>
             </div>
@@ -630,8 +628,7 @@
             <div class="modal-form-field">
               <label for="email" class="form-label">Почта</label>
               <input type="email" name="email" id="email" class="modal-form-input"r />
-              
-                <svg class="form-field-icon form-email-icon " width="15" height="12">
+                <svg class="form-field-icon form-email-icon" >
                   <use href="./symbol-defs.svg#icon-email-black-18dp-1"></use>
                 </svg>
             </div>
@@ -642,12 +639,15 @@
             </div>
 
             <div class="modal-form-field checkbox ">
+              <label class="form-label">Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="">Условия
+                  договора</a>
               <input 
                  type="checkbox" 
                  name="checkbox" 
-                 id="checkbox" 
                  class="modal-form-input-checkbox">
-              <label for="checkbox" class="form-label">Соглашаюсь с рассылкой и принимаю <a class="modal-link">Условия договора</a></label>
+                 <span class="check-box">
+                  </span>
+              </label>
             </div>
 
               <button type="submit" class="submit-button">Отправить</button>

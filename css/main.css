@@ -821,8 +821,15 @@ footer .contact {
   padding-left: 42px;
 }
 
-.form-field-icon:focus {
+.modal-form-input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.modal-form-input:focus + svg {
   fill: var(--accent-color);
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 
 .modal-form-textarea {
@@ -878,15 +885,31 @@ footer .contact {
 
 .form-field-icon {
   position: absolute;
-  top: 32px;
+  top: 29px;
   left: 14px;
+  height: 18px;
+  width: 18px;
 }
 
 .modal-form-input-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.check-box {
+  position: absolute;
+  background-image: url(../images/Vector.svg);
   width: 16px;
   height: 15px;
-  border-radius: 2px;
-  margin-right: 7px;
+  left: 30px;
+}
+
+.modal-form-input-checkbox:checked + .check-box {
+  background-image: url(../images/icon\ check.svg);
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 .submit-button {
