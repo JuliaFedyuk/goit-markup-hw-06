@@ -910,6 +910,11 @@ footer .contact {
   background-image: url(../images/icon\ check.svg);
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
 }
 
 .submit-button {
