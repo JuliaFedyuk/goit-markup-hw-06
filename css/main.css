@@ -819,10 +819,16 @@ footer .contact {
   border-radius: 4px;
   margin-bottom: 14px;
   padding-left: 42px;
+  outline: none;
 }
 
 .modal-form-input:focus {
   border: 1px solid var(--accent-color);
+  border-width: 2px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  outline: none;
 }
 
 .modal-form-input:focus + svg {
@@ -914,7 +920,6 @@ footer .contact {
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-}
 }
 
 .submit-button {
