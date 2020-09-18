@@ -972,6 +972,7 @@ footer .contact {
   border: 1px solid rgba(0, 0, 0, 0.1);
   top: 8px;
   right: 8px;
+  outline: transparent;
 }
 
 .close-button:hover,
@@ -987,6 +988,7 @@ footer .contact {
   border-radius: 4px;
   padding: 0 20px;
   background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-part.joining.sighninig {
